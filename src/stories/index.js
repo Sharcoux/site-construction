@@ -52,10 +52,17 @@ storiesOf('page', module)
   .add('page', () => <Page background={"https://landerapp.com/blog/wp-content/uploads/2018/05/student-education.jpg"} />)
   .add('withMenu', () => (<div>
     <Menu menus={menus}/>
-    <Page color={"#7ebdc1"} />
-    <Page background={"https://landerapp.com/blog/wp-content/uploads/2018/05/student-education.jpg"} />
-    <Page color={"#0000FF"} />
+    <Page color={"#7ebdc1"}>
+      <img src={image} alt="test"/>
+      <Text color={"#FFFFFF"}>Inspiring text</Text>
+    </Page>
+    <Page background={"https://landerapp.com/blog/wp-content/uploads/2018/05/student-education.jpg"} fixed={true}/>
     <Page color={"#FF8000"} />
+    <Page background={"https://landerapp.com/blog/wp-content/uploads/2018/05/student-education.jpg"} fixed={false}/>
+    <Page color={"#0000FF"}>
+      <Text color={"#FFFFFF"}>Inspiring text</Text>
+      <img src={image} alt="test"/>
+    </Page>
   </div>));
 
 storiesOf('image', module)

@@ -10,27 +10,41 @@ const StyledPage = styled.div`
   position: relative;
 
   background-image: url(${props => props.url});
-  background-attachment: fixed;
+  ${props => props.fixed ? "background-attachment: fixed;" : ""}
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 `;
 
-const StyledImage = styled.img`
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+const Child = styled.div`
+  max-width: 40%;
+  padding: 2em;
 `;
 
-const Page = ({background, color,...props}) => (
-  <StyledPage color={color} url={background} />
+// const StyledImage = styled.img`
+//   position: absolute;
+//   object-fit: cover;
+//   width: 100%;
+//   height: 100%;
+// `;
+
+const Page = ({background, color, fixed, children = [], ...props}) => (
+  <StyledPage color={color} url={background} fixed={fixed}>
+    {children.map(child => (<Child>{child}</Child>))}
+  </StyledPage>
 )
 
 
 Page.propTypes = {
   background: PropTypes.string,
   color: PropTypes.string,
+  fixed: PropTypes.bool,
 }
 
 export default Page;
