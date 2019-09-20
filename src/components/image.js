@@ -4,6 +4,8 @@ import styled from 'styled-components';
 
 const StyledImage = styled.img`
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 `
 
 const Image = ({src, alt, title, ...props}) => (

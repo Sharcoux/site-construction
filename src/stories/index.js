@@ -15,9 +15,12 @@ import Header from 'components/header';
 import Header2 from 'components/header2';
 import Image from 'components/image';
 import Menu from 'components/menu';
+import Article from 'components/article';
 
 import image from '../images/no-image.svg';
+import image1 from '../images/image1.svg';
 import logo from '../images/inSchool.svg';
+import theme from '../themes';
 
 const menus = ['Accueil', 'C\'est pour qui ?', 'Guides', 'Offres', 'Contacts'];
 
@@ -52,17 +55,20 @@ storiesOf('page', module)
   .add('page', () => <Page background={"https://landerapp.com/blog/wp-content/uploads/2018/05/student-education.jpg"} />)
   .add('withMenu', () => (<div>
     <Menu menus={menus}/>
-    <Page color={"#7ebdc1"}>
-      <img src={image} alt="test"/>
-      <Text color={"#FFFFFF"}>Inspiring text</Text>
+    <div style={{height: "0.5em"}}></div>
+    <Page color={theme.color.page1}>
+      <Article/>
+      <Image src={image1} alt="test"/>
     </Page>
-    <Page background={"https://landerapp.com/blog/wp-content/uploads/2018/05/student-education.jpg"} fixed={true}/>
-    <Page color={"#FF8000"} />
-    <Page background={"https://landerapp.com/blog/wp-content/uploads/2018/05/student-education.jpg"} fixed={false}/>
-    <Page color={"#0000FF"}>
-      <Text color={"#FFFFFF"}>Inspiring text</Text>
-      <img src={image} alt="test"/>
-    </Page>
+    <Page color={theme.color.page2} />
+    <Page color={theme.color.page3} />
+    <Page color={theme.color.page4} />
+    <Page color={theme.color.page5} />
+    <Page color={theme.color.page6} />
+    <Page color={theme.color.page7} />
+    <Page color={theme.color.page8} />
+    <Page color={theme.color.page9} />
+    <Page color={theme.color.footer} />
   </div>));
 
 storiesOf('image', module)

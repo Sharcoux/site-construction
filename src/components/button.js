@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Image from 'components/image';
-import { MAIN_COLOR, BUTTON_FONT } from 'themes';
+import theme from 'themes';
 
 const transparency = 0.25;
 const delay = 200;
@@ -14,12 +14,12 @@ const StyledButton = styled.div`
   border-radius: .3em;
   overflow: hidden;
   padding: 0.5em 1em;
-  background-color: ${MAIN_COLOR};
+  background-color: ${theme.color.main};
   display: inline-block;
   border-color: rgba(0,0,0,0.2);
   border-bottom-color: rgba(0,0,0,0.4);
   box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9);
-  font-family: ${BUTTON_FONT};
+  font-family: ${theme.font.button};
   color: white;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,0.5);

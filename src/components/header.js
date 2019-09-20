@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from 'components/button2';
 import Image from 'components/image';
-import { SCRIPT_FONT, LIGHT_SECONDARY, DARK_SECONDARY, MAIN_FONT } from 'themes';
+import theme from 'themes';
 
 const Container = styled.header`
   padding: 3em;
-  background-image: ${props => props.image ? 'none' : `linear-gradient( 0deg, ${LIGHT_SECONDARY} 10%, ${DARK_SECONDARY} 100%)`};
+  background-image: ${props => props.image ? 'none' : `linear-gradient( 0deg, ${theme.color.lightSecondary} 10%, ${theme.color.darkSecondary} 100%)`};
   color: white;
   text-shadow: 1px 1px 1px #333;
   text-align: center;
@@ -17,16 +17,16 @@ const Container = styled.header`
 `;
 
 const Title = styled.h1`
-  font-family: ${SCRIPT_FONT};
+  font-family: ${theme.font.cursive};
   margin-top: 0;
 `;
 
 const Subtitle = styled.h2`
-  font-family: ${MAIN_FONT};
+  font-family: ${theme.font.main};
 `;
 
 const Text = styled.p`
-  font-family: ${MAIN_FONT};
+  font-family: ${theme.font.main};
 `;
 
 const StyledButton = styled(Button)`

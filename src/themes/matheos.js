@@ -1,9 +1,16 @@
-export const MAIN_COLOR = "#10A3B7";
-export const SECONDARY_COLOR = "#C3E0E2";
-export const TEXT_COLOR = "#444";
-export const TITLE_COLOR = "#333";
-export const LIGHT_MAIN = "#3fd9ee";
-export const LIGHT_SECONDARY = "#e5f2f3";
-export const DARK_MAIN = "#085059";
-export const DARK_SECONDARY = "#7ebdc1";
-export const TEXT_BACKGROUND = "#F8F8F8";
+const theme = {
+  color: {
+    main: "#10A3B7",
+    secondary: "#C3E0E2",
+    text: "#444",
+    title: "#333",
+    menu: "#555",
+    lightMain: "#3fd9ee",
+    lightSecondary: "#e5f2f3",
+    darkMain: "#085059",
+    darkSecondary: "#7ebdc1",
+    whiteBackground: "#F8F8F8",
+  }
+}
+
+export default theme;

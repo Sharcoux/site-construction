@@ -8,6 +8,8 @@ const StyledPage = styled.div`
   overflow: hidden;
   background-color: ${props => props.color};
   position: relative;
+  padding: 0 4em;
+  box-sizing: border-box;
 
   background-image: url(${props => props.url});
   ${props => props.fixed ? "background-attachment: fixed;" : ""}
@@ -19,12 +21,15 @@ const StyledPage = styled.div`
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 `;
 
 const Child = styled.div`
-  max-width: 40%;
-  padding: 2em;
+  padding: 0.5em 2em;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 // const StyledImage = styled.img`

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Button from 'components/button2';
-import { SCRIPT_FONT, MAIN_FONT } from 'themes';
+import theme from 'themes';
 
 const Container = styled.header`
   @keyframes grow{
@@ -34,16 +34,16 @@ const Container = styled.header`
 `;
 
 const Title = styled.h1`
-  font-family: ${SCRIPT_FONT};
+  font-family: ${theme.font.cursive};
   margin-top: 0;
 `;
 
 const Subtitle = styled.h2`
-  font-family: ${MAIN_FONT};
+  font-family: ${theme.font.main};
 `;
 
 const Text = styled.p`
-  font-family: ${MAIN_FONT};
+  font-family: ${theme.font.main};
 `;
 
 const StyledButton = styled(Button)`

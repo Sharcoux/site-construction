@@ -2,10 +2,48 @@ import '../fonts/DINosaur-Regular.otf';
 import '../fonts/DINosaur-RegularItalic.otf';
 import '../fonts/DINosaur-Bold.otf';
 import '../fonts/DINosaur-BoldItalic.otf';
-export * from 'themes/matheos.js';
+import matheosTheme from 'themes/matheos.js';
 
-// export const MAIN_FONT = "'Dosis', sans-serif";
-export const MAIN_FONT = "'DINosaur', sans-serif";
-export const MENU_FONT = "'DINosaur-bold', sans-serif";
-export const BUTTON_FONT = "'Roboto', sans-serif";
-export const SCRIPT_FONT = "'Dancing Script', cursive";
+const theme = {
+  font: {
+    main: "'DINosaur', sans-serif",
+    menu: "'DINosaur-bold', sans-serif",
+    button: "'Roboto', sans-serif",
+    cursive: "'Dancing Script', cursive",
+  }
+};
+
+const oToi = {
+  font: {
+    menu: "'Nunito', sans-serif",
+    button: "'Nunito', sans-serif",
+    cursive: "'Patrick Hand', cursive;",
+  },
+  color: {
+    menu: "#8161b6",
+    page1: "#3f2362",
+    page2: "#45c0d6",
+    page3: "#6c3ea8",
+    page4: "#ff4da3",
+    page5: "#ffdf5e",
+    page6: "#fff",
+    page7: "#f5effc",
+    page8: "#966ed9",
+    page9: "#6c3ea8",
+    footer: "#3f2362",
+    title1: "#45c0d6",
+  }
+}
+
+function merge(obj1, obj2) {
+  if(!(obj2 instanceof Object)) return;
+  Object.keys(obj2).forEach(key => {
+    if(obj1[key] instanceof Object) merge(obj1[key], obj2[key]);
+    else obj1[key] = obj2[key];
+  });
+}
+
+merge(theme, matheosTheme);
+merge(theme, oToi);
+
+export default theme;

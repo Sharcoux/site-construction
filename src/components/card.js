@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Image from 'components/image';
 import Text from 'components/text';
 import Button from 'components/button';
-import { TEXT_BACKGROUND } from 'themes';
+import theme from 'themes';
 
 const Layer = styled.div`
   display: flex;
@@ -14,7 +14,7 @@ const Layer = styled.div`
   border-radius: .3em;
   overflow: hidden;
   padding: 1em;
-  background-color: ${TEXT_BACKGROUND};
+  background-color: ${theme.color.whiteBackground};
   border-color: rgba(0,0,0,0.2);
   border-bottom-color: rgba(0,0,0,0.4);
   box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9), 2px 2px 2px rgba(0, 0, 0, 0.4);
