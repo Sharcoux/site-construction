@@ -1,0 +1,83 @@
+{
+  "menu": {
+    "home": "Accueil",
+    "clients": "C'est pour qui ?",
+    "products": "Offres",
+    "docs": "Guides",
+    "contact": "Contacts"
+  },
+  "img": {
+    "logo": {
+      "alt": "InSchool",
+      "title": "Logo de InSchool"
+    },
+    "program": {
+      "alt": "Programme",
+      "title": "100% du programme scolaire"
+    },
+    "newsletter": {
+      "alt": "Newsletter",
+      "title": "Inscrivez-vous à la newsletter pour être informé des évolutions du projet"
+    }
+  },
+  "video": {
+    "presentation": {
+      "src": "",
+      "alt": "Video de présentation",
+      "title": "Vidéo de présentation"
+    }
+  },
+  "welcome": {
+    "title": "Les bons outils pour de meilleurs résultats",
+    "subtitle": "Solutions éprouvées au service de la réussite"
+  },
+  "products": {
+    "title": "A chacun ses besoins",
+    "subtitle": "Un outil adapté à tous"
+  },
+  "presentation": {
+    "title": "Une application et un tableau de bord",
+    "content": "Nous vous présentons une plateforme ludique d'aide à l'orientation. Une application destinée aux jeunes et un outil de pilotage pour les professionnels de l'éducation. Un seul objectif : la réussite des jeunes dans leur orientation scolaire et professionnelle."
+  },
+  "features": {
+    "program": {
+      "title": "100% du programme scolaire",
+      "subtitle": "Permet de réaliser tous les exercices, du primaire au lycée."
+    },
+    "offline": {
+      "title": "Disponible hors ligne",
+      "subtitle": "Utilisable en classe sans réseau Wifi."
+    },
+    "modular": {
+      "title": "Adaptable aux besoins spécifiques",
+      "subtitle": "Paramétrage possible pour compenser chaque typologie de handicap : visuel, moteur, auditif ou cognitif"
+    },
+    "children": {
+      "title": "Conçu pour des enfants",
+      "subtitle": "Les capacités de l'élève selon son âge sont prises en compte. Pas de complexité inutile."
+    },
+    "easy": {
+      "title": "Simple d'utilisation",
+      "subtitle": "Prise en main facile. Pas d'apprentissage fastidieux nécessaire."
+    },
+    "exam": {
+      "title": "Utilisable en examen",
+      "subtitle": "L'accès au cours est bloqué en examen. Le logiciel ne travaille pas à la place de l'élève."
+    }
+  },
+  "footer": {
+    "title": "N'en perdez pas une brique !",
+    "description": "Inscrivez-vous à la newsletter pour être informé des évolutions du projet et de nos nouveaux logiciels.",
+    "subscribe": "Je m'inscris"
+  },
+  "form": {
+    "firstname": {
+      "label": "Prénom :",
+      "placeholder": "Entrez votre prénom"
+    },
+    "email": {
+      "label": "E-mail :",
+      "placeholder": "Entrez votre email"
+    }
+  }
+}

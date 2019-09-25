@@ -4,23 +4,24 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import '../App.css';
 
-import Button from 'components/button';
-import Button2 from 'components/button2';
-import Text from 'components/text';
-import Card from 'components/card';
-import Card2 from 'components/card2';
-import RowTable from 'components/rowTable';
-import Page from 'components/page';
-import Header from 'components/header';
-import Header2 from 'components/header2';
-import Image from 'components/image';
-import Menu from 'components/menu';
-import Article from 'components/article';
+import Button from '../components/button';
+import Button2 from '../components/button2';
+import Text from '../components/text';
+import Card from '../components/card';
+import Card2 from '../components/card2';
+import RowTable from '../components/rowTable';
+import Page from '../components/page';
+import Header from '../components/header';
+import Header2 from '../components/header2';
+import Image from '../components/image';
+import Menu from '../components/menu';
+import InputField from '../components/form/inputField';
+
+import Site from '../content';
 
 import image from '../images/no-image.svg';
 import image1 from '../images/image1.svg';
 import logo from '../images/inSchool.svg';
-import theme from '../themes';
 
 const menus = ['Accueil', 'C\'est pour qui ?', 'Guides', 'Offres', 'Contacts'];
 
@@ -53,23 +54,6 @@ storiesOf('rowTable', module)
 
 storiesOf('page', module)
   .add('page', () => <Page background={"https://landerapp.com/blog/wp-content/uploads/2018/05/student-education.jpg"} />)
-  .add('withMenu', () => (<div>
-    <Menu menus={menus}/>
-    <div style={{height: "0.5em"}}></div>
-    <Page color={theme.color.page1}>
-      <Article/>
-      <Image src={image1} alt="test"/>
-    </Page>
-    <Page color={theme.color.page2} />
-    <Page color={theme.color.page3} />
-    <Page color={theme.color.page4} />
-    <Page color={theme.color.page5} />
-    <Page color={theme.color.page6} />
-    <Page color={theme.color.page7} />
-    <Page color={theme.color.page8} />
-    <Page color={theme.color.page9} />
-    <Page color={theme.color.footer} />
-  </div>));
 
 storiesOf('image', module)
   .add('page', () => <Image src={logo} alt={"InSchool"} title={"logo de InSchool"} />);
@@ -82,3 +66,9 @@ storiesOf('header', module)
 
 storiesOf('menu', module)
   .add('default', () => <Menu menus={menus} />);
+
+storiesOf('form', module)
+  .add('input field', () => <InputField type="email" name="email" />);
+
+storiesOf('site', module)
+  .add('site', () => <Site />);

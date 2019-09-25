@@ -3,26 +3,26 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import lang from '../languages';
 
-const StyledImage = styled.img`
+const StyledVideo = styled.video`
   width: 100%;
   height: 100%;
   object-fit: ${props => props.cover ? "cover" : "contain"};
 `
 
-const Image = ({src, title, cover = false}) => (
-  <StyledImage
-    src={src || lang.t(`img.${title}.src`)}
-    alt={lang.t(`img.${title}.alt`) || title}
-    title={lang.t(`img.${title}.title`) || title}
+const Video = ({src, title, cover = false}) => (
+  <StyledVideo
+    src={src || lang.t(`video.${title}.src`)}
+    alt={lang.t(`video.${title}.alt`) || title}
+    title={lang.t(`video.${title}.title`) || title}
     cover={cover}
   />
 )
 
 
-Image.propTypes = {
+Video.propTypes = {
   src: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   cover: PropTypes.bool
 }
 
-export default Image;
+export default Video;

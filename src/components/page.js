@@ -21,14 +21,6 @@ const StyledPage = styled.div`
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  align-items: stretch;
-`;
-
-const Child = styled.div`
-  padding: 0.5em 2em;
-  flex: 1;
-  display: flex;
-  justify-content: center;
   align-items: center;
 `;
 
@@ -41,7 +33,7 @@ const Child = styled.div`
 
 const Page = ({background, color, fixed, children = [], ...props}) => (
   <StyledPage color={color} url={background} fixed={fixed}>
-    {children.map(child => (<Child>{child}</Child>))}
+    {children}
   </StyledPage>
 )
 

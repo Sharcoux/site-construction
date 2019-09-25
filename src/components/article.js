@@ -23,7 +23,6 @@ const Title = styled.div`
 const Subtitle = styled.div`
   font-size: 1.5em;
   font-family: ${theme.font.cursive};
-  color: white;
   margin-bottom: 1.5em;
 `;
 

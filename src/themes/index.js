@@ -7,17 +7,34 @@ import matheosTheme from 'themes/matheos.js';
 const theme = {
   font: {
     main: "'DINosaur', sans-serif",
-    menu: "'DINosaur-bold', sans-serif",
+    menu: "'DINosaur', sans-serif",
     button: "'Roboto', sans-serif",
     cursive: "'Dancing Script', cursive",
+  },
+  color: {
+    color1: "#b8d85d",
+    color2: "#2da9e7",
+    color3: "#8172b5",
+    color4: "#e82187",
+    color5: "#f69e21",
+    color6: "#df84bc",
+    color7: "#00b4b6",
+    darker: {
+      color1: "#009c5e",
+      color2: "#204da9",
+      color3: "#7b0067",
+      color4: "#e20000",
+      color5: "#eb4d1d",
+      color6: "#005988",
+    }
   }
 };
 
 const oToi = {
   font: {
-    menu: "'Nunito', sans-serif",
+    // menu: "'Nunito', sans-serif",
     button: "'Nunito', sans-serif",
-    cursive: "'Patrick Hand', cursive;",
+    // cursive: "'Patrick Hand', cursive;",
   },
   color: {
     menu: "#8161b6",
@@ -44,6 +61,6 @@ function merge(obj1, obj2) {
 }
 
 merge(theme, matheosTheme);
-merge(theme, oToi);
+// merge(theme, oToi);
 
 export default theme;

@@ -20,7 +20,6 @@ const StyledButton = styled.div`
   border-bottom-color: rgba(0,0,0,0.4);
   box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9);
   font-family: ${theme.font.button};
-  color: white;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,0.5);
   font-weight: 400;

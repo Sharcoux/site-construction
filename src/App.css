@@ -6,8 +6,9 @@
   src: local('DINosaur'), url(./fonts/DINosaur-Regular.otf) format('opentype');
 }
 @font-face {
-  font-family: 'DINosaur-bold';
+  font-family: 'DINosaur';
   src: local('DINosaur-bold'), url(./fonts/DINosaur-Bold.otf) format('opentype');
+  font-weight: bold;
 }
 
 html, body {
@@ -16,6 +17,17 @@ html, body {
   margin: 0;
   font-size: 1em;
   min-height: 100vh;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* Hack for React #root element ignoring height:100% instruction */
