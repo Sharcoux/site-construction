@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/main.css",
+    "main.js": "/main.0e514e7377cc43e43da4.bundle.js",
+    "main.css.map": "/main.css.map",
+    "main.js.map": "/main.0e514e7377cc43e43da4.bundle.js.map",
+    "runtime~main.js": "/runtime~main.0e514e7377cc43e43da4.bundle.js",
+    "runtime~main.js.map": "/runtime~main.0e514e7377cc43e43da4.bundle.js.map",
+    "vendors~main.js": "/vendors~main.0e514e7377cc43e43da4.bundle.js",
+    "vendors~main.js.map": "/vendors~main.0e514e7377cc43e43da4.bundle.js.map",
+    "iframe.html": "/iframe.html",
+    "precache-manifest.ac3174cdc3b7217e7767aeb9ece53fd7.js": "/precache-manifest.ac3174cdc3b7217e7767aeb9ece53fd7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/DINosaur-Bold.otf": "/static/media/DINosaur-Bold.3f860173.otf",
+    "static/media/DINosaur-BoldItalic.otf": "/static/media/DINosaur-BoldItalic.e24d343b.otf",
+    "static/media/DINosaur-Medium.otf": "/static/media/DINosaur-Medium.2d4f8e0c.otf",
+    "static/media/DINosaur-MediumItalic.otf": "/static/media/DINosaur-MediumItalic.a9cfc29d.otf",
+    "static/media/DINosaur-Regular.otf": "/static/media/DINosaur-Regular.e54b851a.otf",
+    "static/media/DINosaur-RegularItalic.otf": "/static/media/DINosaur-RegularItalic.835c8168.otf",
+    "static/media/DINosaur-Thin.otf": "/static/media/DINosaur-Thin.96c052bb.otf",
+    "static/media/DINosaur-ThinItalic.otf": "/static/media/DINosaur-ThinItalic.592582ac.otf",
+    "static/media/children.webp": "/static/media/children.94b87f9c.webp",
+    "static/media/image1.svg": "/static/media/image1.07d70888.svg",
+    "static/media/inSchool.svg": "/static/media/inSchool.da0a3ed4.svg",
+    "static/media/no-image.svg": "/static/media/no-image.1c9d6694.svg"
+  }
+}
