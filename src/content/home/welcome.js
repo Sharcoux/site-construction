@@ -21,6 +21,7 @@ const Title = styled.h1`
   margin: 0;
   margin-bottom: 0.3em;
   width: 14em;
+  max-width: 90vw;
   line-height: 1.1;
 `;
 

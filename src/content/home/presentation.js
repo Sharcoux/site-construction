@@ -36,7 +36,7 @@ const Title = styled.h3`
   padding: 0;
   margin: 0;
   text-align: center;
-  width: 11em;
+  white-space: pre;
 `;
 
 const Subtitle = styled.h2`
@@ -69,8 +69,6 @@ const Presentation = () => (
     <Row>
       <Cell><Argument>{lang.t('presentation.argument1')}</Argument></Cell>
       <Cell><Argument>{lang.t('presentation.argument2')}</Argument></Cell>
-    </Row>
-    <Row>
       <Cell><Argument>{lang.t('presentation.argument3')}</Argument></Cell>
       <Cell><Argument>{lang.t('presentation.argument4')}</Argument></Cell>
     </Row>

@@ -78,7 +78,6 @@ const Slide = ({testimony}) => (<CardContainer>
 const Testimony = () => {
   const [index, setIndex] = useState(0);
   const testimonies = lang.t('testimony.t');
-  console.log(index);
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex(i => (i+1)%testimonies.length);//See https://stackoverflow.com/questions/53024496/state-not-updating-when-using-react-state-hook-within-setinterval for explaination
@@ -87,7 +86,7 @@ const Testimony = () => {
   }, []);
   return (<Container>
     <Title>{lang.t('testimony.title')}</Title>
-    <DotContainer>{testimonies.map((_,i)=><Dot selected={i===index} onClick={() => setIndex(i)} />)}</DotContainer>
+    <DotContainer>{testimonies.map((_,i)=><Dot key={i} selected={i===index} onClick={() => setIndex(i)} />)}</DotContainer>
     <Wrapper>
       <Slider index={index}>
         {testimonies.map(t => <Slide key={t.name} testimony={t} />)}
