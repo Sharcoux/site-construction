@@ -1,13 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+
+import Toolbar from './toolbar';
 import Welcome from './welcome';
-import Clients from './clients';
-import Testimony from './testimony';
-import Products from './products';
-import Documentation from './docs';
 import Presentation from './presentation';
-import Contacts from './contacts';
+import Matheos from './matheos';
 import Features from './features';
+import Video from './video';
+import Testimony from './testimony';
+import Contacts from './contacts';
+import Education from './education';
+
 import Menu from '../../components/menu';
 import theme from '../../themes';
 import lang from '../../languages';
@@ -15,16 +18,6 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import PropTypes from 'prop-types';
 
 const Container = styled.div``;
-const SectionsContainer = styled.div`
-  position: relative;
-`;
-const MenuBackground = styled.div`
-  position: sticky;
-  top: 0;
-  background: ${theme.color.color5};
-  z-index:1;
-  height: 5em;
-`;
 
 const Part = (name = "name", Component) => (
   <ScrollableAnchor id={name}>
@@ -52,14 +45,16 @@ console.log(Object.keys(lang.t('menu')));
 
 const Home = () => (
   <Container>
+    <Toolbar />
     <Menu menus={Object.keys(lang.t('menu'))} />
     <Welcome />
-    <SectionsContainer>
-      <MenuBackground />
-      <Products />
-      <Presentation />
-      <Features />
-    </SectionsContainer>
+    <Presentation />
+    <Matheos />
+    <Features />
+    <Video />
+    <Testimony />
+    <Contacts />
+    <Education />
   </Container>
 );
 

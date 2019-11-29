@@ -10,7 +10,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2em 4em;
-  background: white;
+  background: ${theme.color.color5};
   justify-content: stretch;
   align-items: center;
 `;
@@ -18,7 +18,6 @@ const Container = styled.div`
 const Title = styled.h2`
   font-size: 1.5em;
   margin-top: 0;
-  color: ${theme.color.color2};
   padding: 0;
   margin: 1em 0;
   text-align: center;
@@ -27,9 +26,8 @@ const Title = styled.h2`
 const Row = styled.div`
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 1em 0;
+  align-items: flex-start;
+  justify-content: space-around;
   flex-wrap: wrap;
 `;
 
@@ -38,41 +36,43 @@ const CardContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 2em;
   width: 7em;
-  height: 7em;
-  margin: 0.5em;
-  background: ${props => props.color};
-  border-radius: 0.8em;
 `;
 
-const Name = styled.div`
-  font-weight: 500;
-  padding-top: 0.2em;
+const Number = styled.div`
+    font-weight: bold;
+`;
+
+const Legend = styled.div`
+    font-size: 0.8em;
+    text-align: center;
 `;
 
 const Logo = styled.div`
-  height: 1.5em;
+    height: 2em;
 `;
 
-const Card = ({logo, title, color}) => (
-  <CardContainer color={color} >
+const Card = ({logo, title, count}) => (
+  <CardContainer >
     <Logo>
-      <Image title={title} src={logo} />
+        <Image title={title} src={logo} />
     </Logo>
-    <Name>{lang.t('features.'+title)}</Name>
+    <Number>{count}</Number>
+    <Legend>{lang.t('numbers.'+title)}</Legend>
   </CardContainer>
 );
 
-const Features = () => (
+const Numbers = () => (
   <Container>
-    <Title>{lang.t('features.title')}</Title>
     <Row>
-      <Card title="operation" logo={temp} color={theme.color.color1} />
-      <Card title="table" logo={temp} color={theme.color.color3} />
-      <Card title="geometry" logo={temp} color={theme.color.color4} />
-      <Card title="function" logo={temp} color={theme.color.color2} />
+      <Card title="visit" logo={temp} count={30000} />
+      <Card title="download" logo={temp} count={9000}/>
+      <Card title="ergo" logo={temp} count={18} />
+      <Card title="country" logo={temp} count={7} />
     </Row>
+    <Title>{lang.t('numbers.title')}</Title>
   </Container>
 );
 
-export default Features;
+export default Numbers;

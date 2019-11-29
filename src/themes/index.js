@@ -1,7 +1,11 @@
 import '../fonts/DINosaur-Regular.otf';
 import '../fonts/DINosaur-RegularItalic.otf';
+import '../fonts/DINosaur-Medium.otf';
+import '../fonts/DINosaur-MediumItalic.otf';
 import '../fonts/DINosaur-Bold.otf';
 import '../fonts/DINosaur-BoldItalic.otf';
+import '../fonts/DINosaur-Thin.otf';
+import '../fonts/DINosaur-ThinItalic.otf';
 import matheosTheme from 'themes/matheos.js';
 
 const theme = {
@@ -12,13 +16,12 @@ const theme = {
     cursive: "'Dancing Script', cursive",
   },
   color: {
-    color1: "#b8d85d",
-    color2: "#2da9e7",
-    color3: "#8172b5",
-    color4: "#e82187",
-    color5: "#f69e21",
-    color6: "#df84bc",
-    color7: "#00b4b6",
+    color1: "#269ed8",
+    color2: "#d74589",
+    color3: "#716da5",
+    color4: "#e99547",
+    color5: "#51cef4",
+    color6: "#f1f2f2",
     darker: {
       color1: "#009c5e",
       color2: "#204da9",

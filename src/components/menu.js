@@ -13,9 +13,11 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 100;
+  background-color: #269ed8;
+  padding: 1em 0;
 `;
 
 const Navigation = styled.nav`
@@ -28,12 +30,10 @@ const Navigation = styled.nav`
 
 const Item = styled.a`
   padding: 0 1em;
-  font-weight: bold;
+  font-weight: normal;
   transition: 0.5s all ease-out;
   font-family: ${theme.font.menu};
   white-space: nowrap;
-  text-transform : uppercase;
-  text-shadow: 1px 1px 1px black;
   
   &:hover {
     color: ${theme.color.color2};
@@ -41,8 +41,9 @@ const Item = styled.a`
 `;
 
 const Logo = styled.div`
-  height: 4em;
-  margin-left: 1em;
+  height: 2em;
+  margin-left: 4em;
+  filter: saturate(0.5) brightness(0) invert(1);
 `;
 
 const Menu = ({menus}) => (
@@ -51,7 +52,7 @@ const Menu = ({menus}) => (
       <Image src={logo} title={'logo'}/>
     </Logo>
     <Navigation>
-      {menus.map(menu => <Item href={`#${menu}`}>{lang.t(`menu.${menu}`)}</Item>)}
+      {menus.map(menu => <Item key={menu} href={`#${menu}`}>{lang.t(`menu.${menu}`)}</Item>)}
     </Navigation>
   </Container>
 );

@@ -4,25 +4,29 @@ import styled from 'styled-components';
 import Image from 'components/image';
 import theme from 'themes';
 
+
 const transparency = 0.25;
-const delay = 200;
+const delay = 500;
 
 const StyledButton = styled.div`
-  transition: all ${delay / 1000}s;
+  transition: all ${delay / 1000}s ease-out;
   opacity: ${props => props.down ? transparency : 1};
   cursor: pointer;
-  border-radius: .3em;
+  border-radius: 2em;
   overflow: hidden;
-  padding: 0.5em 1em;
-  background-color: ${theme.color.main};
+  padding: 0.4em 0.8em;
+  background-color: ${props => props.color};
   display: inline-block;
-  border-color: rgba(0,0,0,0.2);
-  border-bottom-color: rgba(0,0,0,0.4);
-  box-shadow: inset 0 0.08em 0 rgba(255,255,255,0.4), inset 0 0 0.1em rgba(255,255,255,0.9);
   font-family: ${theme.font.button};
+  color: inherit;
   text-align: center;
-  text-shadow: 0 1px 0 rgba(0,0,0,0.5);
-  font-weight: 400;
+  font-weight: bold;
+  box-shadow: 0 3px 20px 0 #0000003b;
+  min-width: 7em;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 `;
 
 class Button extends React.PureComponent {
@@ -54,10 +58,9 @@ class Button extends React.PureComponent {
   }
 
   render() {
-    const { title, icon } = this.props;
-    return <StyledButton down={this.state.isMouseDown} onMouseDown={this.onMouseDown} {...this.props}>
-      {icon ? <Image src={icon} /> : null}
-      {title ? <span>{title}</span> : null}
+    const { color = theme.color.color2, children = [] } = this.props;
+    return <StyledButton color={color} down={this.state.isMouseDown} onMouseDown={this.onMouseDown} {...this.props}>
+      {children}
     </StyledButton>
   }
 }
@@ -65,6 +68,7 @@ class Button extends React.PureComponent {
 Button.propTypes = {
   title: PropTypes.string,
   icon: PropTypes.string,
+  color: PropTypes.string,
 }
 
 export default Button;

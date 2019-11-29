@@ -27,57 +27,92 @@
       "title": "Vidéo de présentation"
     }
   },
-  "welcome": {
-    "title": "Les bons outils pour de meilleurs résultats",
-    "subtitle": "Solutions éprouvées au service de la réussite"
+  "toolbar": {
+    "login": "Se connecter",
+    "account": "Mon compte"
   },
-  "products": {
-    "title": "A chacun ses besoins",
-    "subtitle": "Un outil adapté à tous"
+  "welcome": {
+    "title": "Ici, le parcours scolaire n'est plus un parcours du combattant",
+    "subtitle": "Les meilleurs outils pour accompagner vos enfants dys du collège au lycée",
+    "action": "Je teste gratuitement\u00a0!"
   },
   "presentation": {
-    "title": "Une application et un tableau de bord",
-    "content": "Nous vous présentons une plateforme ludique d'aide à l'orientation. Une application destinée aux jeunes et un outil de pilotage pour les professionnels de l'éducation. Un seul objectif : la réussite des jeunes dans leur orientation scolaire et professionnelle."
+    "title": "Solution numérique pour élèves avec troubles de l'apprentissage",
+    "subtitle": "L'école inclusive",
+    "argument1": "Disponible hors ligne",
+    "argument2": "Adaptable aux besoins spécifiques",
+    "argument3": "Conçu pour des enfants",
+    "argument4": "Simple d'utilisation"
+  },
+  "matheos": {
+    "title": "Cahier virtuel pour suivre les cours de mathématiques",
+    "action": "Je teste gratuitement\u00a0!"
   },
   "features": {
-    "program": {
-      "title": "100% du programme scolaire",
-      "subtitle": "Permet de réaliser tous les exercices, du primaire au lycée."
-    },
-    "offline": {
-      "title": "Disponible hors ligne",
-      "subtitle": "Utilisable en classe sans réseau Wifi."
-    },
-    "modular": {
-      "title": "Adaptable aux besoins spécifiques",
-      "subtitle": "Paramétrage possible pour compenser chaque typologie de handicap : visuel, moteur, auditif ou cognitif"
-    },
-    "children": {
-      "title": "Conçu pour des enfants",
-      "subtitle": "Les capacités de l'élève selon son âge sont prises en compte. Pas de complexité inutile."
-    },
-    "easy": {
-      "title": "Simple d'utilisation",
-      "subtitle": "Prise en main facile. Pas d'apprentissage fastidieux nécessaire."
-    },
-    "exam": {
-      "title": "Utilisable en examen",
-      "subtitle": "L'accès au cours est bloqué en examen. Le logiciel ne travaille pas à la place de l'élève."
-    }
+    "title": "Des outils pour tout faire à l'ordinateur\u00a0:",
+    "operation": "Opérations",
+    "table": "Tableaux",
+    "geometry": "Géométrie",
+    "function": "Fonctions"
+  },
+  "videoPresentation": {
+    "title": "À chacun ses besoins",
+    "subtitle": "Un outil adapté à tous"
+  },
+  "numbers": {
+    "title": "e-compter\u00a0!",
+    "visit": "Visiteurs sur le site",
+    "download": "Enfants équipés",
+    "ergo": "Ergothérpeuthes nous font confiance",
+    "country": "Pays touchés"
+  },
+  "testimony": {
+    "title": "Témoignages",
+    "t": [
+      {
+        "name": "Audrey Chima",
+        "role": "Parent d'élève",
+        "text": "Votre logiciel est très simple d’utilisation. Il est destiné à mon fils de 9 ans dyspraxique visuo-spatial en CM1 et du fait de son ergonomie et de sa simplicité d’utilisation, il est totalement adapté à un usage en classe et idéal dès le primaire."
+      },
+      {
+        "name": "Machin Truc",
+        "role": "Ergothérapeute",
+        "text": "C'est trop bien!"
+      },
+      {
+        "name": "Truc Muche",
+        "role": "Professeur au collège",
+        "text": "Je l'utilise en classe"
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Contactez-nous\u00a0!",
+    "submit": "Envoyer",
+    "warning": "En cliquant sur \"Envoyer\", vous acceptez que les informations de ce formulaire soient traitées par InSchool SAS afin de répondre à votre question. Elle ne seront ni transmises, ni utilisées à d'autres fins."
+  },
+  "education": {
+    "question": "Vous êtes un professionnel de l'éducation\u00a0?",
+    "action": "Découvrez nos offres."
   },
   "footer": {
-    "title": "N'en perdez pas une brique !",
-    "description": "Inscrivez-vous à la newsletter pour être informé des évolutions du projet et de nos nouveaux logiciels.",
-    "subscribe": "Je m'inscris"
+    "title": "L'école inclusive",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "Email"
   },
   "form": {
-    "firstname": {
+    "name": {
       "label": "Prénom :",
-      "placeholder": "Entrez votre prénom"
+      "placeholder": "Prénom"
     },
     "email": {
       "label": "E-mail :",
-      "placeholder": "Entrez votre email"
+      "placeholder": "Email"
+    },
+    "message": {
+      "label": "Message :",
+      "placeholder": "Message"
     }
   }
 }

@@ -7,11 +7,13 @@ import theme from '../../themes';
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100%;
+  width: 100%;
 `;
 
 const Label = styled.label``;
 
-const Input = styled.input`
+const Textarea = styled.textarea`
   margin: 5px 0;
   background: ${theme.color.color5};
   border-radius: 1em;
@@ -19,6 +21,8 @@ const Input = styled.input`
   border: none;
   font-family: ${theme.font.main};
   color: white;
+  height: 100%;
+  width: 100%;
 
   &::placeholder {
     color: white;
@@ -30,7 +34,7 @@ const InputField = ({required, name, type}) => {
   return (
   <Container>
     {/* <Label>{lang.t(`form.${name}.label`)}</Label> */}
-    <Input type={type || "text"} placeholder={form.placeholder || ''} name={name} required={required} />
+    <Textarea placeholder={form.placeholder || ''} name={name} required={required} />
   </Container>
 );}
 

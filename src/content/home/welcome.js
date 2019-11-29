@@ -2,29 +2,35 @@ import React from 'react';
 import styled from 'styled-components';
 import backgroundImage from '../../images/children.webp';
 import Page from '../../components/page';
+import Button from '../../components/button';
 import lang from '../../languages';
+import theme from 'themes';
 
 const TitleContainer = styled.div`
-  border: 1px solid #000;
-  text-shadow: 1px 1px 1px black;
-  padding: 0 0.8em;
-  position: absolute;
-  left: 2em;
-  bottom: 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Title = styled.h1`
+  text-shadow: 1px 1px 10px #000;
   font-size: 2em;
+  padding: 0;
   margin: 0;
-  margin-bottom: 0.8em;
-  text-transform : uppercase;
-  width: 15em;
+  margin-bottom: 0.3em;
+  width: 14em;
+  line-height: 1.1;
 `;
 
-const Subtitle = styled.h1`
-  font-size: 1.5em;
-  text-transform : uppercase;
+const Subtitle = styled.h2`
+  text-shadow: 1px 1px 10px #000;
+  font-weight: normal;
+  font-size: 1em;
   margin: 0;
+  margin-bottom: 2em;
+  padding: 0;
 `;
 
 const Welcome = () => (
@@ -32,6 +38,7 @@ const Welcome = () => (
     <TitleContainer>
       <Title>{lang.t('welcome.title')}</Title>
       <Subtitle>{lang.t('welcome.subtitle')}</Subtitle>
+      <Button>{lang.t('welcome.action')}</Button>
     </TitleContainer>
   </Page>
 );

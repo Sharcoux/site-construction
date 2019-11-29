@@ -1,63 +1,70 @@
 import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import theme from '../themes';
-import lang from '../languages';
-import Submit from '../components/form/submit';
+import Text from '../components/text';
 import Image from '../components/image';
-import InputField from '../components/form/inputField';
+import lang from '../languages';
+import theme from '../themes';
+import logo from '../images/inSchool.svg';
 
-import temp from '../images/no-image.svg';
-
-const Container = styled.div`
-  background: ${theme.color.color6};
+const Container = styled.footer`
+  padding: 2em 4em;
+  background: white;
+  display: flex;
   flex-direction: column;
-  display: flex;
-  align-items: center;
-`;
-
-const Column = styled.div`
-  flex: 0 0 50%;
-  padding: 2em 1em;
-`;
-
-const Title = styled.h1`
-  margin-top: 0;
-`;
-
-const Row = styled.div`
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 `;
 
-const Text = styled.p`
+const Subtitle = styled.h3`
+    font-size: 1.2em;
+    font-weight: 100;
+    letter-spacing: 0.35em;
+    color: ${theme.color.color1};
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
 `;
 
-const Form = styled.form``;
+const Logo = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+`;
 
-const Footer = (setLang) => {console.log(lang.content, lang.content.footer.subscribe, lang.t('footer.subscribe'));return (
+const Header = styled.h4`
+    font-size: 1em;
+    font-weight: bold;
+    color: ${theme.color.color1};
+    margin: 0;
+    padding: 0;
+`;
+
+const Content = styled.div`
+    color: grey;
+    white-space: pre;
+`;
+
+const InfoContainer = styled.div`
+  margin: 1.5em;
+  text-align: center;
+`;
+
+const Info = ({type, value}) => (<InfoContainer>
+  <Header>{lang.t('footer.'+type)}</Header>
+  <Content>{value}</Content>
+</InfoContainer>)
+
+const Footer = () => (
   <Container>
-    <Title>{lang.t('footer.title')}</Title>
-    <Row>
-      <Column>
-        <Text>{lang.t('footer.description')}</Text>
-        <Form>
-          <InputField name="firstname" type="text" required />
-          <InputField name="email" type="email" required />
-          <Submit>{lang.t('footer.subscribe')}</Submit>
-        </Form>
-      </Column>
-      <Column>
-        <Image src={temp} title="newsletter" />
-      </Column>
-    </Row>
+    <Logo>
+        <Image src={logo} title={'logo'}/>
+        <Subtitle>{lang.t('presentation.subtitle')}</Subtitle>
+    </Logo>
+    <Info type={'address'} value={'Euratechnologies\n165 Avenue de Bretagne 59000 Lille'} />
+    <Info type={'phone'} value={'06 63 91 75 15'} />
+    <Info type={'email'} value={'contact@inschool.fr'} />
   </Container>
-);}
-
-Footer.propTypes = {
-  setLang: PropTypes.func.isRequired,
-}
+);
 
 export default Footer;
